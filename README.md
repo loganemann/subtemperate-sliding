@@ -3,6 +3,7 @@ R13 box model with subtemperate sliding
 
 # matplotlibCLR package
 This repository makes use of the matplotlibCLR package, for the purposes of using scientific sequential colormaps for the parameter sweeps:
+
 Copyright (c) 2024, Stephen Cobeldick
 All rights reserved.
 
