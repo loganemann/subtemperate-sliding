@@ -1,5 +1,9 @@
 # subtemperate-sliding
 R13 box model with subtemperate sliding. Written with a nondimensional implementation, in an ISSM-like syntax.
+
+## Supplemental Materials
+pdf file ```Subtemperate_Manusript___SUPPLEMENT.pdf```
+
 ## Plotting Scripts
 Generate all figures by running ```runme_generateAllFigures``` 
 ### FINAL_FIGURE_subtemperateSliding.m
