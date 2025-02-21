@@ -1,5 +1,5 @@
 # subtemperate-sliding
-R13 box model with subtemperate sliding
+R13 box model with subtemperate sliding. Written in an ISSM-like syntax.
 
 # matplotlibCLR package
 This repository makes use of the matplotlibCLR package, for the purposes of using scientific sequential colormaps for the parameter sweeps:
