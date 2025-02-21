@@ -1,0 +1,31 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Subtemperate Sliding Model: Nondimensional, ISSM-like Version
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clear
+clc
+if strcmp(computer,'GLNXA64')
+    addpath(genpath('/jumbo/ice/SUBTEMPERATE/ver4'))
+    cd /jumbo/ice/SUBTEMPERATE/ver4
+    plotting = false;
+elseif strcmp(computer,'MACI64')
+    addpath(genpath('~/../../Volumes/jumbo/ice/SUBTEMPERATE/ver4'))
+    cd ~/../../Volumes/jumbo/ice/SUBTEMPERATE/ver4/
+    plotting = true;
+else 
+    disp('Incorrect Computer')
+end
+
+
+%%
+    md = R13;
+%% PARAMETERS
+    md=parameterize(md);
+    md.parameters.xi = 0.01;
+
+%% INITIAL CONDITIONS
+    md = initialize(md);
+
+%% SOLVE
+    md = solve_R13(md);
+    plot(md.results.time,md.results.h)
+
